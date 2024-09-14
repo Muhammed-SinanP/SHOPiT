@@ -43,11 +43,15 @@ const CartPage = () => {
           <div className="flex flex-col sm:grid grid-cols-12 gap-2 lg:flex lg:flex-col-reverse">
             <div className="bg-white mb-2 p-2 flex justify-between shadow-sm shadow-gray-800 sm:col-start-10  sm:col-span-3 sm:flex-col  items-center sm:h-40 lg:grid grid-cols-12 lg:h-auto gap-1">
               <div className="pl-1 col-span-10 lg:text-end lg:mr-2 font-medium">
-                Subtotal : $<span className="font-bold">{Math.floor(subTotal)}</span>
+                Subtotal : $
+                <span className="font-bold">{Math.floor(subTotal)}</span>
               </div>
               <div className="pl-1 mt-1 lg:col-span-2 lg:text-end">
-                <button onClick={clear} className="bg-gray-800 hover:bg-gray-900 active:bg-gray-950 text-white p-1 px-2 rounded-sm">
-                   Clear Cart
+                <button
+                  onClick={clear}
+                  className="bg-gray-800 hover:bg-gray-900 active:bg-gray-950 text-white p-1 px-2 rounded-sm"
+                >
+                  Clear Cart
                   <DeleteForeverIcon fontSize="small" className="pb-1" />
                 </button>
               </div>
@@ -62,7 +66,7 @@ const CartPage = () => {
         </div>
       ) : (
         <div className="font-bold text-2xl text-blue-950">
-         Your SHOPiT Cart is empty!
+          Your SHOPiT Cart is empty!
         </div>
       )}
     </div>
