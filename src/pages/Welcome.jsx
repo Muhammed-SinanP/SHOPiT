@@ -1,14 +1,20 @@
 import React from "react";
+import GreatDiscount from "../assets/Greatdiscount.jpg"
+import MenBanner from "../assets/men banner.jpg"
+import BigSale from "../assets/big sale.jpg"
+import WomenBanner from "../assets/Women banner.jpg"
+import Jewelery from "../assets/jewelery.jpg"
+import Electronics from "../assets/electronics.jpg"
 
 const Welcome = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <img src="../src/assets/Greatdiscount.jpg" />
-      <img src="../src/assets/big sale.jpg" />
-      <img src="../src/assets/men banner.jpg" />
-      <img src="../src/assets/Women banner.jpg" />
-      <img src="../src/assets/jewelery.jpg" />
-      <img src="../src/assets/electronics.jpg" />
+      <img src={GreatDiscount} />
+      <img src={BigSale} />
+      <img src={MenBanner} />
+      <img src={WomenBanner} />
+      <img src={Jewelery} />
+      <img src={Electronics} />
     </div>
   );
 };

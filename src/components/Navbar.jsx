@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Logo from "../assets/logo.png"
 
 import ListIcon from "@mui/icons-material/List";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
@@ -42,7 +43,7 @@ const Navbar = () => {
         <div id="logo" className="flex items-end mx-1 ml-2">
           <div className="w-10">
             <img
-              src="../src/assets/logo.png"
+              src={Logo}
               alt="Logo"
               className="object-contain"
             />
